@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="usermaster.master.cs" Inherits="usermaster" %>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Bootstrap Travel Website Template | Smarteyeapps.com</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+
+    <!--    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" /> -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- ################# Header Starts Here#######################--->
+
+    <header class="continer-fluid ">
+        <div class="header-top">
+            <div class="container">
+                <div class="row col-det">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <ul class="ulleft">
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:gujyatradham@gmail.com" style="color: whitesmoke;">gujyatradham@gmail.com</a>
+                                <span>|</span></li>
+                            <li>
+                                <i class="fas fa-phone-volume"></i>
+                                <a href="tel:+91 8401375853" style="color: whitesmoke;">+91 8401375853</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="ulright">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook-square" style="color: whitesmoke;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fab fa-instagram" style="color: whitesmoke;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://in.linkedin.com/x">
+                                    <i class="fab fa-linkedin" style="color: whitesmoke;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.aspx">
+                            <div style="background: url('assets/images/destination/logo1.png'); background-size: 195% 215%; height: 60px; background-position: center center; filter: drop-shadow(2px 2px 0.5px white);"></div>
+                            <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
+                        </a>
+
+                    </div>
+                    <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+
+                        <ul class="navbad">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.aspx">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mandir.aspx">Mandirs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.aspx">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact_us.aspx">Contact US</a>
+                            </li>
+                            <asp:PlaceHolder ID="login" runat="server">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="register.aspx">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.aspx">Login</a>
+                                </li>
+                            </asp:PlaceHolder>
+
+                            <asp:PlaceHolder ID="logout" runat="server" Visible="false">
+                                <li class="nav-item cta cta-colored ">
+                                    <a class="nav-link" href="profile.aspx">
+                                        <i class="fa-solid fa-user" style="font-size: 20px;"></i>
+                                    </a>
+                                </li>
+                            </asp:PlaceHolder>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <asp:ContentPlaceHolder ID="cntp1" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h2>About Us</h2>
+                    <p>
+                    Launched in January 2020, Gujyatradham.com is one of the fastest-growing portals for online stay booking at major pilgrimage destinations across Gujrat. Our main focus is to make the ‘Yatra’ simple and carefree for our guests.    
+                    </p>
+                    <p>This will help you devote much of your time to praying to gods instead of spending it on searching for Dharamshala or hygienic food and worrying about the availability of rooms. With Gujyatradham.com you can have all these facilities by booking from home itself.... </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h2>Useful Links</h2>
+                    <ul class="list-unstyled link-list">
+                        <li><a  href="about_us.aspx">About us</a><i class="fa fa-angle-right"></i></li>
+                        <li><a  href="mandir.aspx">Mandirs</a><i class="fa fa-angle-right"></i></li>
+                        <li><a  href="gallery.aspx">Gallery</a><i class="fa fa-angle-right"></i></li>
+                        <li><a  href="contact_us.aspx">Contact us</a><i class="fa fa-angle-right"></i></li>
+                        <li><a  href="register.aspx">Register</a><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Contact Us</h2>
+                    <address class="md-margin-bottom-40">
+                         Plot No 3704/D Phase IV,<br>
+                       GIDC Estate, Vatva GIDC,<br>
+                        Ahmedabad – 382445<br>
+                        Phone: +91 8401375853<br>
+                        Email: <a href="mailto:gujyatradham@gmail.com" style="color:whitesmoke;">gujyatradham@gmail.com</a>
+                    </address>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!--  ************************* Footer Start Here ************************** -->
+</body>
+</html>
